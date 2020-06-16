@@ -6,7 +6,7 @@ function ShowPassage(){
 } 
  function startShowing(){
    PassSec = 0;
-   PassageID = setInterval("ShowPassage()", 100);
+   PassageID = setInterval("ShowPassage()", 1000);
    document.getElementByID("startcount").disabled = true;
  }
 
