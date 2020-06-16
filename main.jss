@@ -9,7 +9,7 @@ function showPassage() {
  
 // 繰り返し処理の開始
 function startShowing() {
-   PassSec = 0;   // カウンタのリセット
+   PassSec = 0.00;   // カウンタのリセット
    PassageID = setInterval('showPassage()',10);   // タイマーをセット(1000ms間隔)
    document.getElementById("startcount").disabled = true;   // 開始ボタンの無効化
 }
