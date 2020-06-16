@@ -11,6 +11,24 @@
 		</p>
 		<p id="passageArea">(ここにカウントが表示されます)</p>
 	</div>
+		 <script type="text/javascript">
+			 var PassSec;
+function ShowPassage(){
+  PassSec++;
+  var msg = "ボタンを押してから" + PassSec + "秒が経ちました";
+  document.getElementByID("passageArea").innerHTML = msg;
+} 
+ function startShowing(){
+   PassSec = 0;
+   PassageID = setInterval("ShowPassage()", 1000);
+   document.getElementByID("startcount").disabled = true;
+ }
+
+function stopShowing(){
+  clearInterval(PassageID);
+  document.getElementByID("startcount").disabled = false;
+}
+			 </script>
 		
 	</body>
 </html>
