@@ -2,7 +2,7 @@ var PassSec;   // 秒数カウント用変数
  
 // 繰り返し処理の中身
 function showPassage() {
-   PassSec+=1.00;   // カウントアップ
+   PassSec++;   // カウントアップ
    var msg = "ボタンを押してから " + PassSec + "秒が経過しました。";   // 表示文作成
    document.getElementById("PassageArea").innerHTML = msg;   // 表示更新
 }
